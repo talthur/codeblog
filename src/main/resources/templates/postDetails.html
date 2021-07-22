@@ -37,12 +37,13 @@
 					<li class="breadcrumb-item active" aria-current="page">Post</li>
 				</ol>
 			</nav>
-			
+
 			<article>
 				<h1 class="card-title"
 					style="font-weight: bold; margin-bottom: 20px;">
 					<span th:text="${post.titulo}"></span>
 				</h1>
+
 				<p class="card-subtitle mb-2 text-muted">
 					<i class="material-icons">person_outline</i> <span
 						th:text="${post.autor}"></span> <br> <i
@@ -53,6 +54,13 @@
 						<span th:utext="${post.texto}"></span>
 					</p>
 				</section>
+
+				<form action="#" th:action="@{'/posts/{id}'(id=${post.id})}"
+					th:method="delete">
+					<input type="hidden" name="_method" value="delete" />
+					<button type="submit" id="submitButton">delete</button>
+				</form>
+
 			</article>
 		</div>
 	</main>
