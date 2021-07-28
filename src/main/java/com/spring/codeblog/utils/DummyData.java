@@ -1,6 +1,6 @@
 package com.spring.codeblog.utils;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class DummyData {
 		
 		Post post1 = new Post();
 		post1.setAutor("Arthur");
-		post1.setData(LocalDate.now());
+		post1.setData(LocalDateTime.now());
 		post1.setTitulo("Intro Dark Souls 1");
 		post1.setTexto("In the Age of Ancients the world was unformed, shrouded by fog. A land of gray crags, Archtrees and Everlasting Dragons. But then there was Fire and with fire came disparity. Heat and cold, life and death, and of course, light and dark. Then from the dark, They came, and found the Souls of Lords within the flame. Nito, the First of the Dead, The Witch of Izalith and her Daughters of Chaos, Gwyn, the Lord of Sunlight, and his faithful knights. And the Furtive Pygmy, so easily forgotten \n"
 				+ "With the strength of Lords, they challenged the Dragons. Gwyn's mighty bolts peeled apart their stone scales. The Witches weaved great firestorms. Nito unleashed a miasma of death and disease. And Seath the Scaleless betrayed his own, and the Dragons were no more. \n"
@@ -33,7 +33,7 @@ public class DummyData {
 		
 		Post post2 = new Post();
 		post2.setAutor("Amanda");
-		post2.setData(LocalDate.now());
+		post2.setData(LocalDateTime.now());
 		post2.setTitulo("Intro Dark Souls 2");
 		post2.setTexto("Perhaps you've seen it, maybe in a dream.\n"
 				+ "A murky, forgotten land.\n"
@@ -61,7 +61,7 @@ public class DummyData {
 		
 		Post post3 = new Post();
 		post3.setAutor("Adelaide");
-		post3.setData(LocalDate.now());
+		post3.setData(LocalDateTime.now());
 		post3.setTitulo("Intro Dark Souls 3");
 		post3.setTexto("Yes, indeed. It is called Lothric, where the transitory lands of the Lords of Cinder converge. In venturing north, the pilgrims discover the truth of the old words: \"The fire fades and the lords go without thrones.\" When the link of fire is threatened, the bell tolls, unearthing the old Lords of Cinder from their graves...Aldrich, Saint of the Deep... Farron's Undead Legion, the Abyss Watchers... And the reclusive lord of the Profaned Capital, Yhorm the Giant... Only, in truth... the Lords will abandon their thrones... And the Unkindled will rise. Nameless, accursed Undead, unfit even to be cinder. And so it is, that ash seeketh embers.");
 		

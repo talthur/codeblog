@@ -29,8 +29,9 @@
 	<header>
 		<nav class="navbar navbar-light bg-light">
 			<div class="container-fluid">
-				<span class="navbar-brand mb-0 h1">DarkSouls Blog ~minha
-					paixão</span>
+				<span class="navbar-brand mb-0 h1"><a href="/posts">DarkSouls Blog ~minha
+					paixão</a></span>
+					<a sec:authorize="isAuthenticated()" href="/logout" class="btn btn-primary" role="button">Logout</a>
 			</div>
 		</nav>
 	</header>

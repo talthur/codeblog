@@ -55,11 +55,13 @@
 					</p>
 				</section>
 
+				
 				<form action="#" th:action="@{'/posts/{id}'(id=${post.id})}"
-					th:method="delete">
+					th:method="delete" style="margin-top:15px">
 					<input type="hidden" name="_method" value="delete" />
-					<button type="submit" id="submitButton">delete</button>
+					<button class="btn btn-primary" type="submit" id="submitButton">delete</button>
 				</form>
+				
 
 			</article>
 		</div>

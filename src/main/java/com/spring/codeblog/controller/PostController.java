@@ -1,6 +1,6 @@
 package com.spring.codeblog.controller;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
 
@@ -26,7 +26,7 @@ public class PostController {
 	@Autowired
 	PostService postService;
 
-	@GetMapping(value = "/posts")
+	@GetMapping(value = {"/posts", "/"})
 	public ModelAndView getPost() {
 
 		ModelAndView mv = new ModelAndView("posts");
@@ -59,7 +59,7 @@ public class PostController {
 			redirectAttributes.addFlashAttribute("mensagem", "Verifique se todos os campos obrigatórios foram preenchidos");
 			return "redirect:/newpost";
 		}
-			post.setData(LocalDate.now());
+			post.setData(LocalDateTime.now());
 		postService.save(post);
 		return "redirect:/posts";
 	} 
