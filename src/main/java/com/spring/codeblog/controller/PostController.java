@@ -1,6 +1,7 @@
 package com.spring.codeblog.controller;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Collections;
 import java.util.List;
 
@@ -59,7 +60,7 @@ public class PostController {
 			redirectAttributes.addFlashAttribute("mensagem", "Verifique se todos os campos obrigatórios foram preenchidos");
 			return "redirect:/newpost";
 		}
-			post.setData(LocalDateTime.now());
+			post.setData(LocalDateTime.now(ZoneId.of("America/Sao_Paulo")));
 		postService.save(post);
 		return "redirect:/posts";
 	} 
