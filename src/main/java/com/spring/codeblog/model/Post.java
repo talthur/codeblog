@@ -1,6 +1,5 @@
 package com.spring.codeblog.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
@@ -28,7 +27,7 @@ public class Post {
 	@NotBlank
 	private String autor;
 	
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
 	private LocalDateTime data;
 	
 	@NotBlank
